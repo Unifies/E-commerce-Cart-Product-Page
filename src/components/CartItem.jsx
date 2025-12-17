@@ -7,7 +7,6 @@ import { removefromMainCart } from "../store/cart";
 const CartItem = (props) => {
   const { productId, quantity } = props.data;
   const [detail, setDetail] = useState([]);
-  if (!detail) return null;
   useEffect(() => {
     const findDetail = allProducts.filter(
       (product) => product.productNumber === productId
@@ -29,8 +28,8 @@ const CartItem = (props) => {
     <>
       <div className="w-full flex justify-between gap-2 items-center">
         <img
-          src={"/" + detail.mainImageUrl}
-          alt=""
+          src={"/E-commerce-Cart-Product-Page/" + detail.mainImageUrl}
+          alt={detail.alt}
           className="w-[17%] rounded-[5px]"
         />
         <div className="w-[73%] flex flex-col gap-0.5 ">

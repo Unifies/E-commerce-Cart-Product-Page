@@ -73,7 +73,7 @@ const Detail = () => {
         {/* The image [should be slider] area */}
         <div className="relative md:w-[45%] ">
           <img
-            src={"/" + detail.mainImageUrl}
+            src={"/E-commerce-Cart-Product-Page/" + detail.mainImageUrl}
             alt={detail.alt}
             className=" drop-shadow-[0_10px_10px_#0007] w-full h-115 object-cover md:rounded-[10px] cursor-pointer"
           />

@@ -19,19 +19,19 @@ const Conversion = () => {
         </SecondaryButton>
       </div>
 
-      <div className="flex flex-col w-full md:w-[70%] min-h-70 px-auto py-10 bg-grayishBlue shadow-lg rounded-[10px] justify-between items-center text-center gap-2">
+      <div className="flex flex-col w-full md:w-[70%] min-h-70 px-2 py-10 bg-grayishBlue shadow-lg rounded-[10px] justify-between items-center text-center gap-3 md:gap-2">
         <h3 className="text-3xl font-bold tracking-widest uppercase">
           Join the inner circle
         </h3>
         <p>
           Stay up to date with our monthly news, tips, and exclusive promos.
         </p>
-        <form className="flex flex-col md:flex-row gap-5 justify-center items-center">
+        <form className="flex flex-col md:flex-row gap-3 md:gap-5 mt-4 md:mt-0 justify-center items-center">
           <input
             type="email"
             placeholder="Enter your email address"
             required
-            className="w-70 h-10 focus:outline-0 border border-VeryDarkBlue rounded-[10px] p-2"
+            className="w-65 md:w-70 h-10 focus:outline-0 border border-VeryDarkBlue rounded-[10px] p-2"
           />
 
           <button
@@ -42,7 +42,9 @@ const Conversion = () => {
           </button>
         </form>
 
-        <p className="font-medium text-xs">No spam. Unsubscribe anytime.</p>
+        <p className="font-medium -mt-2 md:-mt-5 text-xs">
+          No spam. Unsubscribe anytime.
+        </p>
       </div>
     </>
   );

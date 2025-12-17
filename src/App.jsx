@@ -8,12 +8,12 @@ import FEMProductPage from "./components/FEMProductPage";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/E-commerce-Cart-Product-Page/">
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="" element={<Layout />}>
           <Route index element={<FEMProductPage />} />
           <Route path="home" element={<Home />} />
-          <Route path="/home/:slug" element={<Detail />} />
+          <Route path="home/:slug" element={<Detail />} />
           <Route path="lessons" element={<LessonLearnt />} />
         </Route>
       </Routes>

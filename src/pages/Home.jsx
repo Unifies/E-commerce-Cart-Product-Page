@@ -50,12 +50,12 @@ const Home = () => {
         </div>
 
         {/* Why Choose Us - Fifth Section */}
-        <div className="px-5 md:px-[10%] mt-10 md:mt-15 py-15 flex flex-col">
+        <div className="px-5 md:px-[10%] mt-10 md:mt-15 py-7 md:py-15 flex flex-col">
           <WhyUs />
         </div>
 
         {/* App Play Store - Sixth Section */}
-        <div className="w-full md:flex justify-between items-center py-15 px-5 md:px-[10%] gap-[5%] ">
+        <div className="w-full md:flex justify-between items-center py-7 md:py-10 px-5 md:px-[10%] gap-[5%] ">
           <AppPlayStore />
         </div>
 

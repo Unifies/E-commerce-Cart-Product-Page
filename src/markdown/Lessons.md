@@ -1,34 +1,14 @@
-### What I learned
+# What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+🥵Whew, working on this project has been a tumultuous ride, to say the least. A week and counting, man, my eyes are peeled. But I had fun and loved every second of it, I guess this is what you call passion.<br />
 
-To see how you can add code snippets, see below:
+What I loved most, however, were the challenges I encountered. Ironic, I know, but the syntax that stuck most were the ones I hovered on longer than usual trying to figure out just what was wrong this time. Also, I desperately needed the stretch as I had not written one line of code since February.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Choosing this project, though, as a "get-back-to-it" project, especially as someone still taking React baby steps, may have been audacious on my part. But the more I hit a roadblock, the more I gritted my teeth through it because we don't do give ups here.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+And many, [very many] hours later, I can finally say I am done!! So, as someone who scoured and swam through the internet to find solutions to the problems I encountered, I'm laying them out here, hoping it helps someone cut through the hours it took me to find solutions, and also to lay on thick the syntax(es) I learned in this project by writing them out by heart.
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-Whew, working on this project has been a tumultuous ride, a week and counting, man, my eyes are peeled. But I had fun and loved every second of it, I guess this is what you call passion. What I loved most, however, were the challenges I encountered. Ironic, I know, but the syntax that stuck most were the ones I hovered on longer than usual trying to figure out just what was wrong this time. Also, I desperately needed the stretch as I had not written one line of code since February; but choosing this project as a get-back-to-it project, especially as one taking React baby steps, may have been audacious on my part. But the more I hit a roadblock, the more I grit my teeth through it because we don't do give ups here.
-
-And uncountable hours and sleepless nights later, I can finally say I am done!! So, as someone who scoured and swam through the internet to find solutions o the problems I encountered, I'm laying them out here, hoping it helps someone cut through the hours it took me to find solutions, and also to lay on thick the syntax(es) I learned in this project by writing them out by heart.
-
-Also, for our seasoned professionals who happen to stumble upon this article and notice errors in the below code or know best practices, I would very much appreciate it if you could drop a comment and I would update accordingly
-
-These are written out in no particular order, so keep an eye out for the title of each one:
+These are written out in no particular order, do keep an eye out for the title of each one:
 
 Tricks unique to the Cart Component Project
 
@@ -105,7 +85,7 @@ flatArray.push(image);
 return flatArray;
 };
 
-where id is the identifier in your array, and experience is the name of the nested array, so ensure that these are correct
+where id is the identifier in your array, and experience is the name of the nested array, so ensure that there are no typos
 Then, within the component, assign the above function to the array list of choice:
 
 const candidateExperiences = flattenData(arrayList)
@@ -119,7 +99,7 @@ Now, you can use the candidateExperiences to access the contents of the nested a
     }}
 
 11. Toggle the display of an element, such as the menu onClick of another element such as the Menu Bars.
-    Assign an id [eg: mobileMenu] to the parent container of the mobile menu, then define a function [toggleMobileMenu] to toggle the menu's display:
+    Assign an id [eg: mobileMenu] to the parent container of the element you want to toggle it's display, then define a function [eg: toggleDisplay] to toggle the element's display:
     const toggleMobileMenu = () => {
     const mobileMenu = document.getElementById("mobileMenu");
 
@@ -131,7 +111,7 @@ Now, you can use the candidateExperiences to access the contents of the nested a
 
     };
 
-Then, to the bar and close icons whose clicking handles the opening and closing of the mobile menu, assign the above function to their onClick event:
+Then, to the element whose click handles the opening and closing of the toggled element, assign the above function to their onClick event:
 
 <p onClick = {toggleMobileMenu}> X </p> and <p onClick = {toggleMobileMenu}> = </p>
 
@@ -145,3 +125,27 @@ Add To Cart Function:
 This article will most likely be updated over time to include all help-pieces for this challenge and updates to replace current solutions with best practices,
 
 See you in the next.
+
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+
+```js
+const proudOfThisFunc = () => {
+  console.log("🎉");
+};
+```
+
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+
+Also, for our seasoned professionals who happen to stumble upon this article and notice errors in the below code or know best practices, I would very much appreciate it if you could drop a comment and I would update accordingly

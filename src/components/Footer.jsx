@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-7 justify-between md:flex-row ">
-          <p className="flex gap-1 items-center">
+          <p className="flex gap-1 items-center text-sm sm:text-md">
             <LuCopyright /> 2025 Sneakers Store. All rights reserved.
           </p>
           <div className="flex gap-5 *:hover:text-darkGrayishBlue">
