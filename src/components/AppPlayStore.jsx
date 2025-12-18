@@ -14,11 +14,11 @@ const AppPlayStore = () => {
         <h1 className="capitalize font-bold text-2xl sm:text-3xl text-black ">
           Your Sneaker Plug, In Your Pocket
         </h1>
-        <p className="font-medium text-sm sm:text-sm md:text-xl text-black md:mb-5 ">
+        <p className="font-medium text-sm sm:text-sm md:text-xl text-black md:mb-3 ">
           Be the first to know about new drops, restocks, and exclusive app‑only
           deals.
         </p>
-        <ul className="mb-5">
+        <ul className="mb-5 sm:text-sm md:text-xl">
           <li>✔ Early access to releases</li>
           <li>✔ Drop alerts</li>
           <li>✔ Faster checkout</li>

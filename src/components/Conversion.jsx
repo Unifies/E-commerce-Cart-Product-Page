@@ -12,11 +12,10 @@ const Conversion = () => {
         <p className="font-medium text-xl md:text-2xl">
           Use code STEPUP10 at checkout.
         </p>
-        <SecondaryButton>
-          <p className="font-bold text-xl text-grayishBlue hover:text-black ">
-            Shop & Save
-          </p>
-        </SecondaryButton>
+
+        <button className="w-full md:w-[45%] py-3 bg-VeryDarkBlue hover:bg-orange text-grayishBlue hover:text-black flex rounded-[7px] items-center justify-center cursor-pointer shadow-lg ">
+          <p className="font-bold text-xl">Shop & Save</p>
+        </button>
       </div>
 
       <div className="flex flex-col w-full md:w-[70%] min-h-70 px-2 py-10 bg-grayishBlue shadow-lg rounded-[10px] justify-between items-center text-center gap-3 md:gap-2">
@@ -36,7 +35,7 @@ const Conversion = () => {
 
           <button
             type="submit"
-            className="w-full md:w-[45%] py-3 bg-black hover:bg-transparentBlack text-grayishBlue flex rounded-[7px] items-center justify-center cursor-pointer font-bold text-xs"
+            className="w-full md:w-[45%] py-3 bg-black hover:bg-VeryDarkBlue text-grayishBlue flex rounded-[7px] items-center justify-center cursor-pointer font-bold text-xs"
           >
             Get Early Access
           </button>

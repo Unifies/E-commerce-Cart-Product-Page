@@ -1,5 +1,6 @@
 import React from "react";
 import { allProducts } from "../allProducts";
+import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import AddToCartButton from "../components/AddToCartButton";
 import CategoryImages from "../components/CategoryImages";
@@ -9,6 +10,7 @@ import AboutUs from "../components/AboutUs";
 import AppPlayStore from "../components/AppPlayStore";
 import Conversion from "../components/Conversion";
 import Footer from "../components/Footer";
+import { MdMyLocation } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -66,6 +68,16 @@ const Home = () => {
         <div className="w-full min-h-[80vh] bg-VeryDarkBlue flex justify-center text-grayishBlue flex-col py-15 px-5 md:px-[10%] ">
           <Footer />
         </div>
+
+        <Link to="/lessons">
+          <div className="w-fit flex gap-4 justify-center items-center p-3 bg-transparentBlack text-grayishBlue hover:bg-black rounded-[50%] fixed right-0 top-[50vh] ">
+            <p className="flex flex-col justify-center items-center font-bold ">
+              <MdMyLocation className="w-10 h-10 p-2 text-xl bg-grayishBlue rounded-[50%] text-black" />
+              Click Me
+            </p>
+            <p className="hidden">Read my #What I Learned Notes</p>
+          </div>
+        </Link>
       </div>
     </>
   );

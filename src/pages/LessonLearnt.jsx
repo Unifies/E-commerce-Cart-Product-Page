@@ -1,11 +1,9 @@
 import React from "react";
 import CodeBlock from "/CodeBlock.png";
-import { LuCopyright } from "react-icons/lu";
-import { FaFacebook } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { IoLogoYoutube } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaSquareGithub } from "react-icons/fa6";
 
 const LessonLearnt = () => {
   return (
@@ -21,10 +19,11 @@ const LessonLearnt = () => {
 
         <p>
           What I loved most, however, were the challenges I encountered. Ironic,
-          I know, but the syntaxes that have become a part of me were the ones I
+          I know, but the syntax(es) that have become part of me are the ones I
           hovered on longer than usual trying to figure out just what was wrong
-          this time. Also, I desperately needed the stretch as I had not written
-          one line of code since February.
+          this time - maybe a typo - but rereading blocks of code to debug for
+          errors sure made them stick. Also, I desperately needed the stretch as
+          I had not written one line of code since February.
         </p>
 
         <p>
@@ -39,7 +38,7 @@ const LessonLearnt = () => {
 
         <p>
           So, as someone who scoured and swam through the internet to find
-          solutions to the problems I encountered, I'm laying out everything
+          solutions to the confusions I encountered, I'm laying out everything
           working on this project taught me here, hoping it helps someone find
           the solutions they need, and also to lay on thick the syntax(es) I
           learned by writing them out by heart.
@@ -47,9 +46,9 @@ const LessonLearnt = () => {
 
         <p>
           <span className="font-bold">PS: </span>
-          The below codes are tailored to a React + Vite + Tailwind CSS coding
-          environment and are written out in no particular order, do keep an eye
-          out for the title of each one:
+          The below codes are tailored to a React + Vite + Tailwind CSS setup
+          and are written out in no particular order, do keep an eye out for the
+          title of each one:
         </p>
 
         <p className="font-bold text-xl">
@@ -66,9 +65,9 @@ const LessonLearnt = () => {
             <p className="text-red-400">
               {" "}
               <span className="font-bold">DO NOT: </span>
-              render your svg file as an image in an &lt;img /&gt;. If you
-              intend to change the fill of the svg, rendering as an image takes
-              out the flexibility of playing around with it's attributes.
+              render the svg file as an image in an &lt;img /&gt;. If you intend
+              to dynamically change the fill of the svg, rendering as an image
+              takes out the flexibility of playing around with it's attributes.
             </p>
             <div className="text-green-400">
               {" "}
@@ -76,11 +75,13 @@ const LessonLearnt = () => {
               Some ways to go about this are:
               <ul className="list-disc pl-8">
                 <li>
-                  Either create a copy of the svg file, open with a text editor
-                  and update the color as needed
+                  Duplicate the SVG file and manually edit the fill value in a
+                  text editor
                 </li>
-                <li>Import the file as a component</li>
-                <li>Use directly as an inline svg</li>
+                <li>Import the SVG file as a component</li>
+                <li>Render directly, inline in JSX</li>
+                <li>Use fill="currentColor"</li>
+                <li>Remove hard-coded fill values</li>
               </ul>
             </div>
           </div>
@@ -92,12 +93,13 @@ const LessonLearnt = () => {
             </h2>
             <p className="text-red-400">
               <span className="font-bold">DO NOT: </span>
-              assign an opacity value to the button on hover.
+              apply opacity to the button on hover. Doing this affects
+              everything inside the button - texts, icons, and background.
             </p>
             <p className="text-green-400">
               <span className="font-bold">DO: </span>
-              Use instead the background-color{" "}
-              <span className="font-bold">"[bg-color]" </span> attribute and{" "}
+              Adjust the background-color{" "}
+              <span className="font-bold">"[bg-color]" </span>instead, using{" "}
               <span className="font-bold">rgba() </span>or
               <span className="font-bold"> hsl() </span>color codes to reduce
               the intensity of the background color on hover.
@@ -125,10 +127,10 @@ const LessonLearnt = () => {
               the active class:
               <p className="px-5 md:px-15">
                 {" "}
-                className = &#123;` class attibutes for the design of the
+                className = &#123;`class attributes for the design of the
                 element <br /> $&#123; conditional statement to consider <br />{" "}
                 ? "class attributes if active" <br /> : "class attributes if not
-                the active image in view"&#125; `&#125;
+                the active image in view" &#125; `&#125;
               </p>{" "}
             </p>
           </div>
@@ -174,7 +176,7 @@ const LessonLearnt = () => {
               &lt;div className="
               <span className="font-bold">
                 fixed top-0 left-0 w-full min-h-screen bg-[hsla(0, 0%, 0%, 0.7)]
-                flex justify-center items-center z-9999
+                flex justify-center items-center z-50
               </span>
               "&gt; <br />
               <p className="pl-3 md:pl-10">
@@ -191,7 +193,8 @@ const LessonLearnt = () => {
 
           <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
             <h2 className="font-medium text-grayishBlue">
-              6. Keep an element's position constant no matter the screen size
+              6. Keep an element's position constant, relative to its parent
+              container, no matter the screen size
             </h2>
             <p className="text-green-400">
               <span className="font-bold">DO: </span>
@@ -213,7 +216,7 @@ const LessonLearnt = () => {
           </div>
 
           <p className="font-bold mt-10 text-xl">
-            Up Next: Syntaxes and Functions
+            Up Next: Syntax and Functions
           </p>
 
           <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
@@ -234,7 +237,7 @@ const LessonLearnt = () => {
 
           <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
             <h2 className="font-medium text-grayishBlue">
-              2. Syntax for writing a const function
+              2. Syntax for writing an arrow function assigned to const
             </h2>
             <p className="text-green-400">
               const handleACertainClick = () =&gt; &#123;
@@ -268,11 +271,11 @@ const LessonLearnt = () => {
               same element
             </h2>
             <p className="text-green-400">
-              onClick = &#123; () =&gt; &#123;handleACertainClick();
+              onClick=&#123;() =&gt; &#123; handleACertainClick();
               handleAnotherClick(); &#125;&#125;
             </p>
             <div className="pl-3 md:pl-5 text-blue-400">
-              &lt;button onClick =&gt; &#123;() = &#123;handleCountIncrease();
+              &lt;button onClick=&#123;() =&gt; &#123;handleCountIncrease();
               handleCountDefault(); &#125;&#125;&gt;
               <p className="pl-5 md:pl-15">Click Me!</p> &lt;/button&gt;
             </div>
@@ -280,7 +283,7 @@ const LessonLearnt = () => {
 
           <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
             <h2 className="font-medium text-grayishBlue">
-              5. Syntax for mapping into an array
+              5. Syntax for mapping an array
             </h2>
             <p className="text-green-400">
               &#123;yourArray.map((uniqueItem) =&gt; (
@@ -319,16 +322,15 @@ const LessonLearnt = () => {
 
           <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
             <h2 className="font-medium text-grayishBlue">
-              6. Syntax for mapping into a nested array
+              6. Syntax for mapping over a nested array
             </h2>
             <p className="text-green-400">
-              &#123;yourArray.map((nestedArrayItem) =&gt; (
+              &#123;yourArray.map((nestedItem) =&gt; (
               <p className="pl-3 md:pl-10">
-                &lt;div key=&#123;nestedArrayItem.id&#125;&gt;
+                &lt;div key=&#123;nestedItem.id&#125;&gt;
               </p>
               <p className="pl-5 md:pl-15">
-                &#123;nestedArrayItem.nestedArrayItemTitle.map((uniqueItem)
-                =&gt; (
+                &#123;nestedItem.items.map((uniqueItem) =&gt; (
               </p>
               <p className="pl-7 md:pl-20">
                 &lt;ul key=&#123;uniqueItem.id&#125;&gt;
@@ -399,14 +401,60 @@ const LessonLearnt = () => {
             </div>
           </div>
 
+          <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
+            <h2 className="font-medium text-grayishBlue">
+              7. Display only a set number of items from an array list that has
+              more items than needed
+            </h2>
+            <p className="text-green-400">
+              Use the Splice keyword with the id of the items needed: <br />
+              <br />
+              &#123;yourArray.slice(0, 6).map((uniqueItem) =&gt; (
+              <p className="pl-3 md:pl-10">
+                &lt;div key=&#123;uniqueItem.id&#125;&gt;&lt;/div&gt;{" "}
+              </p>
+              ))&#125;
+            </p>
+            <div className="pl-3 md:pl-5 text-blue-400">
+              const arrayList = [&#123; id: "1", name: "Wisdom", role: "Frontend
+              Developer", &#125;,
+              <br />
+              &#123; id: "2", name: "John", role: "Backend Developer", &#125;,
+              <br />
+              &#123; id: "3", name: "Brad", role: "Full Stack Developer",
+              &#125;,
+              <br />
+              &#123; id: "4", name: "Kris", role: "Product Designer", &#125;,
+              <br />
+              &#123; id: "5", name: "Dave", role: "IT Engineer", &#125;,];
+              <br />
+              <br />
+              &#123;arrayList.slice(0, 3).map((arrayItem) =&gt; (
+              <p className="pl-3 md:pl-10">
+                &lt;div key=&#123;arrayItem.id&#125;&gt;
+              </p>
+              <p className="pl-7 md:pl-15">
+                &lt;p&gt;&#123;arrayItem.name&#125;&lt;/p&gt;
+              </p>
+              <p className="pl-3 md:pl-10">&lt;/div&gt;</p>
+              ))&#125;
+            </div>
+            <p className="text-green-400">
+              The above code returns array items in{" "}
+              <span className="font-bold">0th - 2nd</span> position [different
+              from id] of the array, so the result would be Wisdom, John, and
+              Brad.
+            </p>
+          </div>
+
           {/* The last item in the block of Q&As list ends */}
         </div>
         {/* Div containing all blocks of Q&As with overflow-y-scroll ends */}
 
         <p>
-          Thats it<span className="font-bold"> for now. </span>I will keep one
-          adding all what I learned to this list, but I paused here so I could
-          submit the challenge, please check back for more solutions if you
+          That's it<span className="font-bold"> for now. </span>I’ll continue
+          adding everything I learnt to this list, but I’ve paused here so I can
+          submit the challenge. Please check back for more solutions if you
           found this article useful.
         </p>
 
@@ -414,32 +462,41 @@ const LessonLearnt = () => {
           <p className="font-bold"> Written by: </p>
           <p>Wisdom Ezeonyeche</p>
           <p>
-            Frontend Developer whos passionate about building amzing, intuitive,
-            and innovative solutions
+            I’m a Frontend Developer passionate about building intuitive,
+            user-focused, and innovative web experiences. My work is grounded in
+            a strong understanding of HTML, CSS, Vanilla JavaScript, and React,
+            and I enjoy translating ideas and designs into clean, accessible,
+            and maintainable interfaces that actually solve problems.
           </p>
           <p>
-            Interested in paid part-time roles where I can support Frontend
-            production or manage dev communities while I continue to increase my
-            learning and finally knock imposter syndrome out of the ring, and
-            confidently position myself for full-fledged developer roles. If
-            you're working on a project and need help meeting deadlines, I'm the
-            extra hand you need, do get in touch.
+            I’m currently open to paid frontend-focused roles or gigs, as well
+            as opportunities as a tech community manager or frontend support
+            developer, where I can contribute meaningfully while continuing to
+            grow, sharpen my skills, and finally, finally show imposter syndrome
+            the exit door. If you’re building something exciting, need an extra
+            pair of reliable hands on your team, or could use support hitting
+            project deadlines, feel free to reach out, I’d love to connect.
           </p>
           <div className="flex gap-5 *:hover:text-darkGrayishBlue">
-            <a href="#" title="Facebook">
-              <FaFacebook />
+            <a
+              href="mailto:wisdomezeonyeche@gmail.com"
+              title="Email"
+              target="blank"
+            >
+              <MdEmail />
             </a>
-            <a href="#" title="Twitter">
-              <FaXTwitter />
+            <a href="https://github.com/Unifies" title="GitHub" target="blank">
+              <FaSquareGithub />
             </a>
-            <a href="#" title="Instagram">
-              <RiInstagramFill />
-            </a>
-            <a href="#" title="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/wisdomezeonyeche"
+              title="LinkedIn"
+              target="blank"
+            >
               <IoLogoLinkedin />
             </a>
-            <a href="#" title="YouTube">
-              <IoLogoYoutube />
+            <a href="http://dm.wa.link/e7xxoi" title="WhatsApp" target="blank">
+              <IoLogoWhatsapp />
             </a>
           </div>
         </div>

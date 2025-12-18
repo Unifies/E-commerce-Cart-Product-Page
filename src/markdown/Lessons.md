@@ -2,11 +2,11 @@
 
 🥵Whew, working on this project has been a tumultuous ride, to say the least. A week and counting, man, my eyes are peeled. But I had fun and loved every second of it, I guess this is what you call passion.<br />
 
-What I loved most, however, were the challenges I encountered. Ironic, I know, but the syntax that stuck most were the ones I hovered on longer than usual trying to figure out just what was wrong this time. Also, I desperately needed the stretch as I had not written one line of code since February.
+What I loved most, however, were the challenges I encountered. Ironic, I know, but the syntax that stuck most were the ones I hovered on longer than usual trying to figure out just what was wrong this time - maybe a typo - but rereading blocks of code to debug for errors sure made the syntaxes stick. Also, I desperately needed the stretch as I had not written one line of code since February.
 
 Choosing this project, though, as a "get-back-to-it" project, especially as someone still taking React baby steps, may have been audacious on my part. But the more I hit a roadblock, the more I gritted my teeth through it because we don't do give ups here.
 
-And many, [very many] hours later, I can finally say I am done!! So, as someone who scoured and swam through the internet to find solutions to the problems I encountered, I'm laying them out here, hoping it helps someone cut through the hours it took me to find solutions, and also to lay on thick the syntax(es) I learned in this project by writing them out by heart.
+And many, [very many] hours later, I can finally say I am done!! So, as someone who scoured and swam through the internet to find solutions to the confusions I encountered, I'm laying them out here, hoping it helps someone cut through the hours it took me to find solutions, and also to lay on thick the syntax(es) I learned in this project by writing them out by heart.
 
 These are written out in no particular order, do keep an eye out for the title of each one:
 
@@ -149,3 +149,63 @@ const proudOfThisFunc = () => {
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 Also, for our seasoned professionals who happen to stumble upon this article and notice errors in the below code or know best practices, I would very much appreciate it if you could drop a comment and I would update accordingly
+
+          <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
+            <h2 className="font-medium text-grayishBlue">
+              8. Access items in a nested array for use in functions - kind of
+              like mapping into a nested array as above, but for use in
+              functions where you can't use array.map
+            </h2>
+            <p className="text-green-400">
+              Use the Splice keyword with the id of the items needed: <br />
+              <br />
+              &#123;yourArray.slice(0, 6).map((uniqueItem) =&gt; (
+              <p className="pl-3 md:pl-10">
+                &lt;div key=&#123;uniqueItem.name&#125;&gt;&lt;/div&gt;{" "}
+              </p>
+              ))&#125;
+            </p>
+            <div className="pl-3 md:pl-5 text-blue-400">
+              const arrayList = [&#123; id: "1", name: "Wisdom", role: "Frontend
+              Developer" &#125;,
+              <br />
+              &#123; id: "2", name: "John", role: "Backend Developer" &#125;,
+              <br />
+              &#123; id: "3", name: "Brad", role: "Full Stack Developer" &#125;,
+              <br />
+              &#123; id: "4", name: "Kris", role: "Product Designer" &#125;,
+              <br />
+              &#123; id: "5", name: "Dave", role: "IT Engineer" &#125;, ];
+              <br />
+              <br />
+              &#123;arrayList.slice(0, 3).map((arrayItem) =&gt; (
+              <p className="pl-3 md:pl-10">
+                &lt;div key=&#123;arrayItem.id&#125;&gt;
+              </p>
+              <p className="pl-7 md:pl-15">
+                &lt;p&gt;&#123;arrayItem.name&#125;&lt;/p&gt;
+              </p>
+              <p className="pl-3 md:pl-10">&lt;/div&gt;</p>
+              ))&#125;
+            </div>
+            <p className="text-green-400">
+              The above code returns array items in{" "}
+              <span className="font-bold">0th - 2nd</span> position [different
+              from id] of the array, so the result would be Wisdom, John, and
+              Brad.
+            </p>
+          </div>
+
+          {arrayList.splice(0, 3).map((arrayItem) => (
+            <div key={arrayItem.id}>
+              <p>{arrayItem.name}</p>
+            </div>
+          ))}
+
+const arrayList = [
+{ id: "1", name: "Wisdom", role: "Web Developer" },
+{ id: "2", name: "John", role: "Web Developer" },
+{ id: "3", name: "Brad", role: "Web Developer" },
+{ id: "4", name: "Kris", role: "Web Developer" },
+{ id: "5", name: "Dave", role: "Web Developer" },
+];
