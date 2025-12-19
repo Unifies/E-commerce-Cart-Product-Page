@@ -56,7 +56,7 @@ const CartTab = () => {
 
   return (
     <>
-      <div
+      <main
         ref={containerRef}
         className={`fixed top-10 md:top-20 right-10 md:right-30 bg-white w-65 h-fit font-display rounded-[7px] shadow-lg ${
           statusTab === false
@@ -91,7 +91,7 @@ const CartTab = () => {
             Checkout
           </button>
         </div>
-      </div>
+      </main>
     </>
   );
 };
