@@ -6,7 +6,7 @@ import FEMProductDetail from "./FEMProductDetail";
 const FEMProductPage = () => {
   return (
     <>
-      <div className="flex w-full min-h-full justify-center items-center flex-col md:px-[13%] font-display gap-5">
+      <div className="flex w-full min-h-screen justify-center items-center flex-col md:px-[13%] font-display gap-5">
         <div className="md:flex h-fit items-center justify-center gap-[8%]">
           <FEMProductImage />
           <FEMProductDetail />
