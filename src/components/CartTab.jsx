@@ -64,11 +64,9 @@ const CartTab = () => {
             : "opacity-100 transition-opacity duration-500"
         }`}
       >
-        <aside>
-          <h1 className="p-4 text-xs font-bold w-full shadow-[0px_1px_0px_rgba(10,10,1,0.1)] ">
-            Cart
-          </h1>
-        </aside>
+        <h1 className="p-4 text-xs font-bold w-full shadow-[0px_1px_0px_rgba(10,10,1,0.1)] ">
+          Cart
+        </h1>
 
         <div className="p-4 flex flex-col gap-4 items-center ">
           <div

@@ -11,7 +11,9 @@ const Layout = () => {
           <Header />
           <Outlet />
         </main>
-        <CartTab />
+        <aside>
+          <CartTab />
+        </aside>
       </div>
     </>
   );
