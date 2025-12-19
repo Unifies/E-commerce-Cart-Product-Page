@@ -56,7 +56,7 @@ const CartTab = () => {
 
   return (
     <>
-      <main
+      <div
         ref={containerRef}
         className={`fixed top-10 md:top-20 right-10 md:right-30 bg-white w-65 h-fit font-display rounded-[7px] shadow-lg ${
           statusTab === false
@@ -64,9 +64,11 @@ const CartTab = () => {
             : "opacity-100 transition-opacity duration-500"
         }`}
       >
-        <h1 className="p-4 text-xs font-bold w-full shadow-[0px_1px_0px_rgba(10,10,1,0.1)] ">
-          Cart
-        </h1>
+        <aside>
+          <h1 className="p-4 text-xs font-bold w-full shadow-[0px_1px_0px_rgba(10,10,1,0.1)] ">
+            Cart
+          </h1>
+        </aside>
 
         <div className="p-4 flex flex-col gap-4 items-center ">
           <div
@@ -91,7 +93,7 @@ const CartTab = () => {
             Checkout
           </button>
         </div>
-      </main>
+      </div>
     </>
   );
 };
