@@ -447,6 +447,67 @@ const LessonLearnt = () => {
             </p>
           </div>
 
+          <p className="font-bold mt-10 text-xl">
+            Other Things Learned, as taught by Frontend Mentor's Code Submission
+            Reports
+          </p>
+
+          <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
+            <h2 className="font-medium text-grayishBlue">
+              1. All page contents should be contained by landmarks
+              [Accessibility Report]
+            </h2>
+            <p className="text-green-400">
+              HTML landmarks are semantic elements that define the major regions
+              of a page, helping screen reader users navigate quickly, assistive
+              technologies understand page structure, and search engines better
+              interpret the layout.
+            </p>
+            <div className="pl-3 md:pl-5 text-blue-400">
+              &lt;header&gt; – Intro content for a page or section <br />{" "}
+              &lt;nav&gt; – Primary or secondary navigation <br /> &lt;main&gt;
+              – The main content (only one per page) <br /> &lt;section&gt; –
+              Thematic grouping of content
+              <br /> &lt;article&gt; – Self-contained, reusable content <br />{" "}
+              &lt;aside&gt; – Complementary or sidebar content <br />{" "}
+              &lt;footer&gt; – Footer for a page or section
+            </div>
+          </div>
+
+          <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
+            <h2 className="font-medium text-grayishBlue">
+              2. Do not embed a paragraph tag &lt;p&gt; in buttons
+              &lt;button&gt; [HTML Report]
+            </h2>
+            <p className="text-red-400">
+              <span className="font-bold">DO NOT: </span>
+              &lt;button&gt; &lt;p&gt; Text &lt;/p&gt; &lt;/button&gt;
+            </p>
+            <div className="text-green-400">
+              {" "}
+              <span className="font-bold">DO: </span>
+              <br />
+              Plain text: &lt;button&gt; Submit &lt;/button&gt; <br />
+              Span tags: &lt;button&gt; &lt;span&gt; Submit &lt;/span&gt;
+              &lt;/button&gt; <br />
+              Icons + text: &lt;button&gt; &lt;Icon /&gt; Submit &lt;/button&gt;
+              - [This could also be img or svg tags] <br />
+              Icons + text in span tags: &lt;button&gt; &lt;Icon /&gt;
+              &lt;span&gt; Submit &lt;/span&gt; &lt;/button&gt; <br />
+            </div>
+          </div>
+
+          <div className="w-full p-5 rounded-[10px] bg-VeryDarkBlue flex flex-col gap-5 items-start">
+            <h2 className="font-medium text-grayishBlue">
+              3. Always include a "type" attribute for buttons [HTML Report]
+            </h2>
+            <div className="text-green-400">
+              &lt;button type="button"&gt; Click Me &lt;/button&gt; <br />
+              &lt;button type="submit"&gt; Submit &lt;/button&gt; <br />
+              &lt;button type="reset"&gt; Reset &lt;/button&gt; <br />
+            </div>
+          </div>
+
           {/* The last item in the block of Q&As list ends */}
         </div>
         {/* Div containing all blocks of Q&As with overflow-y-scroll ends */}
