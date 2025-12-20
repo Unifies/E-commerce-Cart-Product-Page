@@ -10,7 +10,7 @@ import { IoLogoYoutube } from "react-icons/io";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col gap-15 py-5 md:py-0">
+      <footer className="flex flex-col gap-15 py-5 md:py-0">
         <img
           src={FooterPng}
           alt=""
@@ -110,7 +110,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 };

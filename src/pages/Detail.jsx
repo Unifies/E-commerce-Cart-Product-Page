@@ -140,18 +140,19 @@ const Detail = () => {
               />
             </div>
             <button
+              type="button"
               onClick={() => {
                 handleSendToCart();
                 togglePriceDisplayed();
               }}
-              className="w-full md:w-[55%] py-3 bg-orange hover:bg-opacityOrange flex rounded-[7px] items-center justify-center cursor-pointer "
+              className="w-full md:w-[55%] py-3 bg-orange hover:bg-opacityOrange flex rounded-[7px] items-center justify-center cursor-pointer font-bold text-xs "
             >
               <img
                 src={Cart}
                 alt=""
                 className="mr-3 w-3.5 h-3.5 fill-current "
               />
-              <p className="font-bold text-xs ">Add to cart</p>
+              Add to cart
             </button>
           </div>
         </div>

@@ -26,14 +26,14 @@ const AppPlayStore = () => {
         </ul>
         <div className="flex flex-col md:flex-row justify-start gap-5">
           <AddToCartButton>
-            <p className="font-bold text-sm flex gap-1 items-center ">
+            <span className="font-bold text-sm flex gap-1 items-center ">
               <BsApple className="text-xl" /> Download on App Store
-            </p>
+            </span>
           </AddToCartButton>
           <SecondaryButton>
-            <p className="font-bold text-sm flex gap-1 items-center ">
+            <span className="font-bold text-sm flex gap-1 items-center ">
               <FaGooglePlay className="text-xl" /> Get it on Google Play
-            </p>
+            </span>
           </SecondaryButton>
         </div>
       </div>
@@ -41,12 +41,12 @@ const AppPlayStore = () => {
       <div className="w-[45%] relative md:mb-10">
         <img
           src={DroidImage}
-          alt="More Than Sneakers. It’s a Culture."
+          alt="Get it on Google Play"
           className="hidden md:block w-[40%] mb-7 sm:mb-15 md:mb-0 h-auto relative -right-20"
         />
         <img
           src={IphoneImage}
-          alt="More Than Sneakers. It’s a Culture."
+          alt="Download on App Store"
           className="hidden md:block w-[50%] mb-7 sm:mb-15 md:mb-0 h-auto absolute top-0 right-0"
         />
       </div>

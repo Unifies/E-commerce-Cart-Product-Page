@@ -23,7 +23,7 @@ const AboutUs = () => {
         </p>
         <div className="flex flex-col md:flex-row justify-start gap-5">
           <AddToCartButton>
-            <p className="font-bold text-xl ">Read Our Story</p>
+            <span className="font-bold text-xl ">Read Our Story</span>
           </AddToCartButton>
         </div>
       </div>

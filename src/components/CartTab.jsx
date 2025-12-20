@@ -83,6 +83,7 @@ const CartTab = () => {
             ))}
           </div>
           <button
+            type="button"
             onClick={handleCheckout}
             className={`w-full py-3 bg-orange hover:bg-opacityOrange flex rounded-[7px] items-center justify-center cursor-pointer font-bold text-xs ${
               carts.length >= 1 ? "flex" : "hidden"

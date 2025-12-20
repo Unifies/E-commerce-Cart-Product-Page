@@ -21,10 +21,10 @@ const Hero = () => {
         </p>
         <div className="flex flex-col md:flex-row justify-start gap-5">
           <AddToCartButton>
-            <p className="font-bold text-md ">Shop the Latest Drops</p>
+            <span className="font-bold text-md ">Shop the Latest Drops</span>
           </AddToCartButton>
           <SecondaryButton>
-            <p className="font-bold text-md">Explore Bestsellers</p>
+            <span className="font-bold text-md">Explore Bestsellers</span>
           </SecondaryButton>
         </div>
       </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import AddToCartButton from "../components/AddToCartButton";
-import SecondaryButton from "./SecondaryButton";
 
 const Conversion = () => {
   return (
@@ -13,8 +11,11 @@ const Conversion = () => {
           Use code STEPUP10 at checkout.
         </p>
 
-        <button className="w-full md:w-[45%] py-3 bg-VeryDarkBlue hover:bg-orange text-grayishBlue hover:text-black flex rounded-[7px] items-center justify-center cursor-pointer shadow-lg ">
-          <p className="font-bold text-xl">Shop & Save</p>
+        <button
+          type="button"
+          className="w-full md:w-[45%] py-3 bg-VeryDarkBlue hover:bg-orange text-grayishBlue hover:text-black flex rounded-[7px] items-center justify-center cursor-pointer shadow-lg "
+        >
+          <span className="font-bold text-xl">Shop & Save</span>
         </button>
       </div>
 

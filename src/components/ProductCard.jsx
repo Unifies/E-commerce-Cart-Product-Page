@@ -34,11 +34,12 @@ const ProductCard = (props) => {
         <div className="flex justify-between items-center">
           <p className="text-xl font-semibold ">${price}.00</p>
           <button
-            className="w-[55%] py-3 bg-orange hover:bg-opacityOrange flex rounded-[7px] items-center justify-center cursor-pointer shadow-lg "
+            type="button"
+            className="w-[55%] py-3 bg-orange hover:bg-opacityOrange flex rounded-[7px] items-center justify-center cursor-pointer shadow-lg font-bold text-xs "
             onClick={handleAddToMainCart}
           >
             <img src={Cart} alt="" className="mr-3 w-3.5 h-3.5 fill-current " />
-            <p className="font-bold text-xs ">Add to cart</p>
+            Add to cart
           </button>
         </div>
       </div>
