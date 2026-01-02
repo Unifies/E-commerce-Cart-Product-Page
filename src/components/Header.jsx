@@ -87,8 +87,10 @@ const Header = () => {
           <div className="relative cart-toggle" onClick={handleCartDisplay}>
             <img src={CartPng} alt="" className="cursor-pointer w-[1rem]" />
             <span
-              className="absolute w-4.5 h-3 flex items-center
-              cursor-pointer justify-center -top-1.5 -right-2 text-[10px] font-semibold py-0.5 px-2 bg-orange rounded-[20px] text-white "
+              className={`absolute w-4.5 h-3 items-center
+              cursor-pointer justify-center -top-1.5 -right-2 text-[10px] font-semibold py-0.5 px-2 bg-orange rounded-[20px] text-white ${
+                carts.length < 1 ? "hidden" : "flex"
+              }`}
             >
               {totalQuantity}
             </span>
